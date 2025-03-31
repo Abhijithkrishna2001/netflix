@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import React from 'react';
 import './App.css';
 import AdBanner from './Components/AdBanner/AdBanner';
 import Banner from './Components/Banner/Banner';

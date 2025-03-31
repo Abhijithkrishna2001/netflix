@@ -9,14 +9,19 @@
       content="Web site created using create-react-app"
     />
     <link rel="icon" href="%PUBLIC_URL%/Netflix_N.png" type="image/x-icon" />
-   
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
     <title>Netflix</title>
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      if (window.location.protocol !== "https:") {
+        window.location.href = "https://" + window.location.hostname + window.location.pathname + window.location.search;
+      }
+    </script>
+    
   
   </body>
 </html>
