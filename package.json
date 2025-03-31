@@ -2,6 +2,7 @@
   "name": "netflix-clone",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://abhijithkrishna2001.github.io/",
   "proxy": "https://localhost:3000/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
