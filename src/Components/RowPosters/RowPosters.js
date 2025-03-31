@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './RowPosters.css'
 import axios from '../../axios'
-import {API_KEY, baseUrl, imageUrl } from '../../Constants/Constants'
+import {API_KEY, imageUrl } from '../../Constants/Constants'
 import YouTube from 'react-youtube'
 function RowPosters(props) {
   const [movie,setMovie] = useState([])
@@ -23,7 +23,7 @@ function RowPosters(props) {
   };
   const handleMovie = (id)=>{
     console.log(id)
-    axios.get(`${baseUrl}movie/${id}/videos?api_key=${API_KEY} `).then((response)=>{
+    axios.get(`movie/${id}/videos?api_key=${API_KEY} `).then((response)=>{
       if(response.data.results[0]!=null){
         setUrlId(response.data.results[0].key)
       }else{
